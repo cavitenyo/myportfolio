@@ -110,9 +110,8 @@
 		<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 				Hero Block
 		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-		<div id="hero-block" class="hero-block personal-home bg-image"
-			style="background-image: url('assets/images/bg/hero-bg-10.jpg');">
-			<div id="particles-js"></div>
+		<div id="hero-block" class="hero-block personal-home bg-image bg-overlay welcome-video-area"
+			style="background-image: url('assets/images/bg/hero-bg-6.jpg');">
 			<div class="waves-effect bottom" style="background-image: url('assets/images/others/shape.png');">
 			</div>
 			<div class="container">
@@ -750,8 +749,6 @@
 		</div>
 		<!--~~./ end latest news block ~~-->
 
-
-
 		<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 			Start Site Footer
 		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -869,8 +866,17 @@
 	<script src="assets/js/odometer.min.js"></script>
 	<script src="assets/js/isInViewport.jquery.js"></script>
 	<script src="assets/js/contact.js"></script>
-	<script src="assets/js/main.js"></script>
-	<!-- main-js -->
+	<script src="assets/js/main.js"></script><!-- main-js -->
+
+	<!-- This script use for this page -->
+	<script src="assets/js/ultimate-bg.js"></script>
+	<script>
+		$('.welcome-video-area').c47bg({
+			type: 'youtube',
+			container: 'div',
+			source: 'EfTUpvxEbqc'
+		});
+	</script>
 </body>
 
 </html>

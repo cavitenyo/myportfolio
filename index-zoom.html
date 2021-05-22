@@ -37,6 +37,10 @@
 	<link rel="stylesheet" href="assets/css/simple-scrollbar.css" />
 	<link rel="stylesheet" href="assets/css/odometer-theme-default.css" />
 	<link rel="stylesheet" href="assets/css/fontawesome.all.min.css" />
+
+	<!-- This style use for this page -->
+	<link rel="stylesheet" href="assets/css/zoomslider.css" />
+
 	<link rel="stylesheet" href="assets/css/style.css" />
 
 	<script src="assets/js/modernizr.min.js"></script>
@@ -110,15 +114,15 @@
 		<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 				Hero Block
 		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-		<div id="hero-block" class="hero-block personal-home bg-image"
-			style="background-image: url('assets/images/bg/hero-bg-10.jpg');">
-			<div id="particles-js"></div>
+		<div id="hero-block" class="hero-block personal-home bg-image bg-overlay"
+			data-zs-src='["assets/images/bg/hero-bg-7.jpg", "assets/images/bg/hero-bg-2.jpg", "assets/images/bg/hero-bg-5.jpg"]'
+			data-zs-bullets='false'>>
 			<div class="waves-effect bottom" style="background-image: url('assets/images/others/shape.png');">
 			</div>
 			<div class="container">
-				<div class="row">
+				<div class="row justify-content-center">
 					<div class="col-lg-8">
-						<div class="hero-content-area">
+						<div class="hero-content-area text-center">
 							<div class="hero-desc">
 								Hello <span></span> I am
 							</div>
@@ -750,8 +754,6 @@
 		</div>
 		<!--~~./ end latest news block ~~-->
 
-
-
 		<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 			Start Site Footer
 		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -869,8 +871,10 @@
 	<script src="assets/js/odometer.min.js"></script>
 	<script src="assets/js/isInViewport.jquery.js"></script>
 	<script src="assets/js/contact.js"></script>
-	<script src="assets/js/main.js"></script>
-	<!-- main-js -->
+	<script src="assets/js/main.js"></script><!-- main-js -->
+
+	<!-- This script use for this page -->
+	<script src="assets/js/jquery.zoomslider.min.js"></script>
 </body>
 
 </html>

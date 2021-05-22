@@ -5017,6 +5017,7 @@ a:hover, a:active {
 }
 .hero-block .btn-primary {
   border-radius: 5px;
+  z-index: 9;
 }
 @media (min-width: 992px) {
   .hero-block .text-center .hero-desc {

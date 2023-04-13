@@ -4907,12 +4907,12 @@ a:hover, a:active {
 }
 @media (min-width: 1200px) {
   .hero-block .hero-title {
-    font-size: 106px;
+    font-size: 90px;
   }
 }
 @media (min-width: 1400px) {
   .hero-block .hero-title {
-    font-size: 120px;
+    font-size: 100px;
     margin-bottom: 32px;
   }
 }

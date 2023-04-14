@@ -8,7 +8,7 @@
 
 		contentLoading: function () {
 			$('body').imagesLoaded(function () {
-				$('.loader-wrapper').fadeOut(500);
+				$('#preloader').delay(550).fadeOut('slow');
 				setTimeout(function () {
 					//After 2s, the no-scroll class of the body will be removed
 					$('body').removeClass('no-scroll');

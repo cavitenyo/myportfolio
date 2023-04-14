@@ -786,7 +786,7 @@
 								<p class="sub-title">Don’t Hesitate To Contact Me</p>
 							</div>
 							<div class="contact-form-area">
-								<form id="contact_form" class="contact-form" action="#">
+								<form id="my-form" class="contact-form" action="https://formspree.io/f/xzbqkoyj" method="post">
 									<div class="row gx-4">
 										<div class="col-lg-6 col-md-6">
 											<div class="form-group">
@@ -837,7 +837,7 @@
 													<div class="icon">
 														<i class="fas fa-envelope"></i>
 													</div>
-													<p><a href="mailto:example@gmail.com">josephanthonyvilloria@gmail.com</a></p>
+													<p><a href="mailto:josephanthonyvilloria@gmail.com">josephanthonyvilloria@gmail.com</a></p>
 												</div>
 												<div class="single-contact-info">
 													<div class="icon">
@@ -999,6 +999,43 @@
 		}
 		);
 	</script>
+	
+<script>
+    var form = document.getElementById("my-form");
+    async function handleSubmit(event) {
+      $('#preloader').show();	
+      event.preventDefault();
+      var data = new FormData(event.target); 
+      var status = document.getElementById("my-form-status");
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+	  mdtoast('Email sent!. I will contact you as soon as possible thanks.', { type: 'success' });	
+	  $('#preloader').hide();	
+          form.reset()
+        } else {
+          response.json().then(data => {
+            if (Object.hasOwn(data, 'errors')) {
+	      status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+	      $('#preloader').hide();    
+            } else {
+	      mdtoast('Oops! There was a problem submitting your form!.', { type: 'error' });  
+	      $('#preloader').hide();	    
+            }
+          })
+        }
+      }).catch(error => {
+	      mdtoast('Oops! There was a problem submitting your form!.', { type: 'error' });  
+	      $('#preloader').hide();
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
+</script>
 </body>
 
 </html>

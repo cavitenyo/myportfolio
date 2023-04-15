@@ -411,4 +411,19 @@
 		intimateApp.contentLoading();
 		intimateApp.isotope_activation();
 	});
+	
+	/* ---------------------------------------------
+	 Document ready function
+	 --------------------------------------------- */
+$('#nav li').on('click', function(e) {
+    $(this).find('ul').toggle();
+});
+
+$('body').on("click", function (e) {
+    if ($(e.target).closest('#nav li').length) {
+        $(e.target).closest('#nav li ul').toggle();
+    } else {
+        $('#nav li ul').hide();
+    }
+});
 })(jQuery);

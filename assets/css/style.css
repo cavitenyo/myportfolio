@@ -8808,3 +8808,8 @@ a:hover, a:active {
     -webkit-transform: scale(1.0);
   }
 }
+
+.open_li {
+  list-style-image: url('../images/icon/arrow_right.png');
+  cursor:pointer;
+}

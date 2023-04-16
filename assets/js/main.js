@@ -425,5 +425,6 @@ $('body').on("click", function (e) {
     } else {
         $('#nav li ul').hide();
     }
+	$('#nav li ul').hide();
 });
 })(jQuery);

@@ -21,7 +21,7 @@
 	<link rel="stylesheet" href="assets/css/simple-scrollbar.css" />
 	<link rel="stylesheet" href="assets/css/odometer-theme-default.css" />
 	<link rel="stylesheet" href="assets/css/fontawesome.all.min.css" />
-        <link rel="stylesheet" href="assets/css/animate.min.css">
+        <link rel="stylesheet" href="assets/css/animate.css">
 	<script src="assets/js/modernizr.min.js"></script>
        <link rel="stylesheet" href="assets/css/toast.css">
        <script src="assets/js/toast.js"></script>
@@ -86,7 +86,7 @@
 			<div id="particles-js"></div>
 			<div class="waves-effect bottom" style="background-image: url('assets/images/others/shape.png');">
 			</div>
-			<div class="container">
+			<div class="container wow fadeInUp">
 				<div class="row">
 					<div class="col-lg-8">
 						<div class="hero-content-area">
@@ -998,7 +998,7 @@
 	<script src="assets/js/isInViewport.jquery.js"></script>
 	<script src="assets/js/contact.js"></script>
 	<script src="assets/js/main.js"></script><!-- main-js -->
-	<script src="assets/js/wow.js"></script><!-- main-js -->
+	<script src="assets/js/wow.js"></script>
 	<!-- This script use for this page -->
 	<script src="assets/js/particle-animation.js"></script>
 	<script>
@@ -1119,6 +1119,20 @@
 			}
 		}
 		);
+		
+  //===== Wow Animation Setting =====//
+  if ($(".wow").length > 0) {
+    var wow = new WOW({
+      boxClass:     'wow',      // default
+      animateClass: 'animated', // default
+      offset:       0,          // default
+      mobile:       true,       // default
+      live:         true        // default
+    }); 
+
+    wow.init();
+  }
+		
 	</script>
 	
 <script>

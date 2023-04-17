@@ -8818,3 +8818,35 @@ a:hover, a:active {
   list-style-image: url('../images/icon/arrow_right.png');
   cursor:pointer;
 }
+
+.screen {
+	display: block;
+	width: 300px;
+	height: 280px;
+	overflow: hidden;
+	position: relative;
+	border-radius: 1px;
+	margin: 0 auto;
+}
+.screen img {
+	bottom: -1538px;
+	width: 100%;
+	height: auto;
+	position: absolute;
+	z-index: 0;
+  margin:0;
+  padding:0;
+	-webkit-transition: top 3s;
+	-moz-transition: top 3s;
+	-ms-transition: top 3s;
+	-o-transition: top 3s;
+	transition: bottom 3s;
+}
+.screen:hover img {
+  bottom: 0;
+  -webkit-transition: all 8s;
+  -moz-transition: all 8s;
+  -ms-transition: all 8s;
+  -o-transition: all 8s;
+  transition: all 8s;
+}

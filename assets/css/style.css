@@ -8851,3 +8851,11 @@ a:hover, a:active {
   -o-transition: all 8s;
   transition: all 8s;
 }
+.translate {
+    font-size: small;
+    color: darkorange;
+}
+.translate:hover {
+    font-size: medium;
+    color: #19b4cb;
+}

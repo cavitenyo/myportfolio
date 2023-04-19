@@ -8602,7 +8602,7 @@ a:hover, a:active {
 @media (min-width: 992px) {
   .footer-content-wrapper {
     padding-left: 25px;
-    padding-top: 150px;
+    padding-top: 100x;
   }
 }
 @media (min-width: 1200px) {
